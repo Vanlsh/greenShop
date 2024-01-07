@@ -1,0 +1,100 @@
+.header-close-burger {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+}
+.header-close-burger span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  transition: background-color 0.3s ease;
+}
+.header-close-burger::before,
+.header-close-burger::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 2px;
+  background-color: var(--text-color);
+  transition: background-color 0.3s ease;
+}
+
+.header-close-burger::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.header-close-burger::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.header-close-burger:hover span,
+.header-close-burger:hover::before,
+.header-close-burger:hover::after {
+  background-color: var(--green-color);
+}
+
+.header-burger {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgba(22, 21, 21, 0);
+  transition: background-color 0.3s ease;
+  width: 100vw;
+  height: 100vh;
+}
+.header-burger.is-open {
+  visibility: visible;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.header-burger-wrapper {
+  position: relative;
+  transform: translate(100%, 0);
+  max-width: 360px;
+  margin-left: auto;
+  background-color: #fff;
+  height: 100%;
+  padding: 50px 30px 30px;
+  transition: transform 0.3s ease;
+}
+.is-open .header-burger-wrapper {
+  transform: translate(0, 0);
+}
+.header-burger-nav {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+.header-burger-list {
+  width: 100%;
+}
+.header-burger-item {
+  width: 100%;
+}
+.header-burger-link {
+  display: block;
+  color: var(--text-color);
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: rgba(0, 0, 0, 0);
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+.header-burger-link:hover {
+  color: var(--green-color);
+  background-color: rgba(0, 0, 0, 0.1);
+}

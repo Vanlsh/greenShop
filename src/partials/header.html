@@ -1,13 +1,45 @@
-<header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
+<header class="header container">
+  <div class="header-wrapper">
+    <a class="header-logo" href="./index.html">
+      <img src="./img/logo.svg" alt="logo" />
+    </a>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="./index.html" class="nav-link active">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Shop</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Plant Care</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Blogs</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="buttons-wrapper">
+      <button class="header-button">
+        <svg class="header-button-icon" width="20" height="20">
+          <use href="./img/icons.svg#icon-find-loop"></use>
+        </svg>
+      </button>
+      <button class="header-button">
+        <svg class="header-button-icon" width="24" height="24">
+          <use href="./img/icons.svg#icon-card"></use>
+        </svg>
+        <span class="card-counter">1</span>
+      </button>
+      <button class="header-button-login">
+        <svg class="header-icon-login" width="16" height="16">
+          <use href="./img/icons.svg#icon-enter"></use>
+        </svg>
+        Login
+      </button>
+      <button class="header-open-burger" id="header-open-burger">
+        <span></span>
+      </button>
+    </div>
+  </div>
 </header>
