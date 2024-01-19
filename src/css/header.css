@@ -13,12 +13,7 @@
 }
 .nav-list {
   display: flex;
-  gap: calc(50px - (1200px - 100vw) * 0.05);
-}
-@media screen and (min-width: 1200px) {
-  .nav-list {
-    gap: 50px;
-  }
+  gap: clamp(10px, 2vw, 50px);
 }
 .nav-item {
 }
