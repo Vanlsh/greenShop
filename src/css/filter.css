@@ -1,5 +1,5 @@
 .filter {
-  width: 310px;
+  max-width: 310px;
 }
 .filter-wrapper {
   padding: 14px 18px;
@@ -19,6 +19,13 @@
 .filter-item {
   width: 100%;
 }
+.filter-item input[type='radio'] {
+  display: none;
+}
+.filter-item input[type='radio']:checked + .filter-item-button {
+  color: var(--green-color);
+  font-weight: 700;
+}
 .filter-item-button {
   width: 100%;
   height: 40px;
@@ -33,10 +40,6 @@
   transition: font-weight 0.3s ease, color 0.3s ease;
 }
 .filter-item-button:hover {
-  color: var(--green-color);
-  font-weight: 700;
-}
-.filter-item-button.active {
   color: var(--green-color);
   font-weight: 700;
 }
@@ -109,8 +112,8 @@
   position: absolute;
   height: 4px;
   background-color: var(--green-color);
-  right: 20%;
-  left: 25%;
+  right: 0;
+  left: 0;
 }
 .filter-input-range {
   -webkit-appearance: none;

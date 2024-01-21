@@ -3,58 +3,119 @@
     <h3 class="filter-title">Categories</h3>
     <ul class="filter-list">
       <li class="filter-item">
-        <button class="filter-item-button">
+        <input
+          type="radio"
+          name="categories"
+          id="housePlants"
+          value="housePlants"
+        />
+        <label for="housePlants" class="filter-item-button">
           House Plants<span>(33)</span>
-        </button>
+        </label>
       </li>
       <li class="filter-item">
-        <button class="filter-item-button">
+        <input
+          type="radio"
+          name="categories"
+          id="potterPlants"
+          value="potterPlants"
+        />
+        <label for="potterPlants" class="filter-item-button">
           Potter Plants<span>(33)</span>
-        </button>
+        </label>
       </li>
       <li class="filter-item">
-        <button class="filter-item-button">Seeds<span>(33)</span></button>
+        <input type="radio" name="categories" id="seeds" value="seeds" />
+        <label for="seeds" class="filter-item-button"
+          >Seeds<span>(33)</span></label
+        >
       </li>
       <li class="filter-item">
-        <button class="filter-item-button">
+        <input
+          type="radio"
+          name="categories"
+          id="smallPlants"
+          value="smallPlants"
+        />
+        <label for="smallPlants" class="filter-item-button">
           Small Plants<span>(33)</span>
-        </button>
+        </label>
       </li>
       <li class="filter-item">
-        <button class="filter-item-button">Big Plants<span>(33)</span></button>
+        <input
+          type="radio"
+          name="categories"
+          id="bigPlants"
+          value="bigPlants"
+        />
+        <label for="bigPlants" class="filter-item-button"
+          >Big Plants<span>(33)</span></label
+        >
       </li>
       <li class="filter-item">
-        <button class="filter-item-button">Succulents<span>(33)</span></button>
+        <input
+          type="radio"
+          name="categories"
+          id="succulents"
+          value="succulents"
+        />
+        <label for="succulents" class="filter-item-button"
+          >Succulents<span>(33)</span></label
+        >
       </li>
       <li class="filter-item">
-        <button class="filter-item-button">Trerrariums<span>(33)</span></button>
+        <input
+          type="radio"
+          name="categories"
+          id="trerrariums"
+          value="trerrariums"
+        />
+        <label for="trerrariums" class="filter-item-button"
+          >Trerrariums<span>(33)</span></label
+        >
       </li>
       <li class="filter-item">
-        <button class="filter-item-button">Gardening<span>(33)</span></button>
+        <input
+          type="radio"
+          name="categories"
+          id="gardening"
+          value="gardening"
+        />
+        <label for="gardening" class="filter-item-button"
+          >Gardening<span>(33)</span></label
+        >
       </li>
       <li class="filter-item">
-        <button class="filter-item-button">Accessories<span>(33)</span></button>
+        <input
+          type="radio"
+          name="categories"
+          id="accessories"
+          value="accessories"
+        />
+        <label for="accessories" class="filter-item-button"
+          >Accessories<span>(33)</span></label
+        >
       </li>
     </ul>
     <h3 class="filter-title filter-range-title">Price Range</h3>
     <div class="filter-range">
       <div class="filter-range-container">
-        <div class="filter-track"></div>
+        <div class="filter-track js-filter-track"></div>
         <input
           type="range"
           min="0"
-          max="100"
-          value="20"
-          step="1"
+          max="100000"
+          value="0"
+          step="1000"
           class="filter-input-range filter-min-slider"
           id="minRange"
         />
         <input
           type="range"
           min="0"
-          max="100"
-          value="80"
-          step="1"
+          max="100000"
+          value="100000"
+          step="1000"
           class="filter-input-range filter-max-slider"
           id="maxRange"
         />
@@ -67,18 +128,27 @@
           ></span
         >
       </p>
-      <button class="filter-button">Filter</button>
+      <button class="filter-button js-filter-button">Filter</button>
     </div>
-    <h3 class="filter-title">Categories</h3>
+    <h3 class="filter-title">Size</h3>
     <ul class="filter-list">
       <li class="filter-item">
-        <button class="filter-item-button">Small<span>(119)</span></button>
+        <input type="radio" name="size" id="small" value="small" />
+        <label for="small" class="filter-item-button"
+          >Small<span>(119)</span></label
+        >
       </li>
       <li class="filter-item">
-        <button class="filter-item-button">Medium<span>(33)</span></button>
+        <input type="radio" name="size" id="medium" value="medium" />
+        <label for="medium" class="filter-item-button"
+          >Medium<span>(33)</span></label
+        >
       </li>
       <li class="filter-item">
-        <button class="filter-item-button">Large<span>(33)</span></button>
+        <input type="radio" name="size" id="large" value="large" />
+        <label for="large" class="filter-item-button"
+          >Large<span>(33)</span></label
+        >
       </li>
     </ul>
   </div>

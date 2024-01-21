@@ -1,0 +1,27 @@
+.shop-container {
+  display: flex;
+}
+.con {
+  display: flex;
+  gap: 10px;
+}
+.bold-on-hover {
+  position: relative;
+}
+.bold-on-hover:hover {
+}
+.bold-on-hover::before {
+  content: 'Hover to make me bold';
+  position: absolute;
+  top: 0;
+  left: 1px;
+  width: 101%;
+  height: 101%;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.bold-on-hover:hover::before {
+  opacity: 1;
+  font-weight: bold;
+}
